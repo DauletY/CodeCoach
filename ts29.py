@@ -1,15 +1,5 @@
 # Getting in shape
-file = open("pull_ups.txt", 'r')
-
-n = int(input())
-
-for line in file.readlines(n):
-        line.startswith()    
-        print(line)
-
-# result = file.readlines(n)
-# r = 0
-# for i in result:
-#     print(i)
-    
-file.close()
+with  open("pull_ups.txt") as pull_ups:
+        print(pull_ups.readlines()[int(input())])
+pull_ups.close()
+ 
